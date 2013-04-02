@@ -28,45 +28,44 @@
 
 ;;; Code:
 
-
 (deftheme syohex-reverse
   "Reverse color theme with my kind")
 
 (custom-theme-set-faces
  'syohex-reverse
  '(button ((t (:underline t :foreground "cyan1"))))
- '(default ((t (:background "gray6" :foreground "white"))))
+ '(default ((t (:background "black" :foreground "white"))))
  '(cursor ((t (:foreground "white"))))
  '(region ((t (:background "blue3"))))
- '(font-lock-builtin-face ((t (:foreground "#aacefa"))))
+ '(font-lock-builtin-face ((t (:foreground "LightSteelBlue"))))
  '(font-lock-comment-delimiter-face ((t (:foreground "chocolate1"))))
  '(font-lock-comment-face ((t (:foreground "chocolate1"))))
  '(font-lock-constant-face ((t (:foreground "Aquamarine"))))
- '(font-lock-doc-face ((t (:foreground "HotPink"))))
- '(font-lock-function-name-face ((t (:foreground "#4682ff"))))
- '(font-lock-keyword-face ((t (:foreground "cyan3"))))
+ '(font-lock-doc-face ((t (:foreground "tomato"))))
+ '(font-lock-function-name-face ((t (:foreground "LightSkyBlue"))))
+ '(font-lock-keyword-face ((t (:foreground "Cyan1"))))
  '(font-lock-negation-char-face ((t (nil))))
  '(font-lock-preprocessor-face ((t (:foreground "LightSteelBlue"))))
  '(font-lock-regexp-grouping-backslash ((t (:weight bold))))
  '(font-lock-regexp-grouping-construct ((t (:weight bold))))
- '(font-lock-string-face ((t (:foreground "HotPink"))))
+ '(font-lock-string-face ((t (:foreground "tomato"))))
  '(font-lock-type-face ((t (:foreground "PaleGreen"))))
  '(font-lock-variable-name-face ((t (:foreground "LightGoldenrod"))))
- '(font-lock-warning-face ((t (:weight bold :foreground "#d54e53"))))
+ '(font-lock-warning-face ((t (:weight bold :foreground "Pink"))))
  '(minibuffer-prompt ((t (:foreground "cyan"))))
 
  '(completions-annotations ((t (:underline t))))
  '(completions-common-part ((t (:foreground "white" :background "black"))))
  '(completions-first-difference ((t (:weight bold))))
  '(dired-directory ((t (:foreground "LightSkyBlue"))))
- '(dired-flagged ((t (:weight bold :foreground "#d54e53"))))
+ '(dired-flagged ((t (:weight bold :foreground "Pink"))))
  '(dired-header ((t (:foreground "PaleGreen"))))
  '(dired-ignored ((t (:foreground "grey70"))))
  '(dired-mark ((t (:foreground "Aquamarine"))))
  '(dired-marked ((t (:weight bold :foreground "DarkOrange"))))
  '(dired-perm-write ((t (:foreground "chocolate1"))))
  '(dired-symlink ((t (:foreground "Cyan1"))))
- '(dired-warning ((t (:foreground "#d54e53" :weight bold))))
+ '(dired-warning ((t (:foreground "Pink" :weight bold))))
  '(error ((t (:foreground "#d54e53" :weight bold))))
  '(escape-glyph ((t (:foreground "cyan"))))
  '(file-name-shadow ((t (:foreground "grey70"))))
@@ -90,7 +89,8 @@
  '(mode-line-emphasis ((t (:weight bold))))
  '(mode-line-highlight ((t (:box (:line-width 2 :color "grey40"
                                   :style released-button)))))
- '(mode-line-inactive ((t (:background "grey20" :foreground "grey80"
+ '(mode-line-inactive ((t (:background "grey30" :foreground "grey80"
+                           :box (:line-width -1 :color "grey40" :style nil)
                            :weight light))))
  '(mouse ((t (nil))))
  '(next-error ((t (:background "blue3"))))
@@ -120,4 +120,4 @@
 
 (provide-theme 'syohex-reverse)
 
-;;; reverse-theme.el ends here
+;;; syohex-reverse-theme.el ends here
