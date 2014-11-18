@@ -28,7 +28,6 @@
 
 ;;; Code:
 
-
 (deftheme reverse
   "Reverse color theme(like '-r' option)")
 
@@ -42,14 +41,14 @@
  '(font-lock-comment-delimiter-face ((t (:foreground "chocolate1"))))
  '(font-lock-comment-face ((t (:foreground "chocolate1"))))
  '(font-lock-constant-face ((t (:foreground "Aquamarine"))))
- '(font-lock-doc-face ((t (:foreground "LightSalmon"))))
+ '(font-lock-doc-face ((t (:foreground "tomato"))))
  '(font-lock-function-name-face ((t (:foreground "LightSkyBlue"))))
  '(font-lock-keyword-face ((t (:foreground "Cyan1"))))
  '(font-lock-negation-char-face ((t (nil))))
  '(font-lock-preprocessor-face ((t (:foreground "LightSteelBlue"))))
  '(font-lock-regexp-grouping-backslash ((t (:weight bold))))
  '(font-lock-regexp-grouping-construct ((t (:weight bold))))
- '(font-lock-string-face ((t (:foreground "LightSalmon"))))
+ '(font-lock-string-face ((t (:foreground "tomato"))))
  '(font-lock-type-face ((t (:foreground "PaleGreen"))))
  '(font-lock-variable-name-face ((t (:foreground "LightGoldenrod"))))
  '(font-lock-warning-face ((t (:weight bold :foreground "Pink"))))
@@ -67,15 +66,15 @@
  '(dired-perm-write ((t (:foreground "chocolate1"))))
  '(dired-symlink ((t (:foreground "Cyan1"))))
  '(dired-warning ((t (:foreground "Pink" :weight bold))))
- '(error ((t (:foreground "Pink" :weight bold))))
+ '(error ((t (:foreground "#d54e53" :weight bold))))
  '(escape-glyph ((t (:foreground "cyan"))))
  '(file-name-shadow ((t (:foreground "grey70"))))
  '(fringe ((t (:background "grey10"))))
  '(glyphless-char ((t (:height 0.6))))
  '(header-line ((t (:box (:line-width -1 :style released-button)
-                    :background "grey20" :foreground "grey90" :box nil))))
+                         :background "grey20" :foreground "grey90" :box nil))))
  '(help-argument-name ((t (nil))))
- '(highlight ((t (:background "darkolivegreen"))))
+ '(highlight ((t (:background "#484848"))))
  '(isearch ((t (:background "palevioletred2" :foreground "brown4"))))
  '(isearch-fail ((t (:background "red4"))))
  '(italic ((t (:underline t))))
@@ -85,15 +84,68 @@
  '(match ((t (:background "RoyalBlue3"))))
  '(menu ((t (nil))))
 
- '(mode-line ((t (:background "grey75" :foreground "black"
-                  :box (:line-width -1 :style released-button)))))
- '(mode-line-buffer-id ((t (:weight bold))))
+ '(mode-line ((t (:background "#333333" :foreground "#bbbbbc"))))
+ '(mode-line-buffer-id ((t (:weight bold :foreground "orange"))))
  '(mode-line-emphasis ((t (:weight bold))))
  '(mode-line-highlight ((t (:box (:line-width 2 :color "grey40"
-                                  :style released-button)))))
+                                              :style released-button)))))
  '(mode-line-inactive ((t (:background "grey30" :foreground "grey80"
-                           :box (:line-width -1 :color "grey40" :style nil)
-                           :weight light))))
+                                       :box (:line-width -1 :color "grey40" :style nil)
+                                       :weight light))))
+ '(diff-added-face ((t (:background nil :foreground "green" :weight normal))))
+ '(diff-removed-face ((t (:background nil :foreground "firebrick1" :weight normal))))
+ '(diff-file-header-face ((t (:background nil :weight extra-bold))))
+ '(diff-refine-added ((t (:background nil :underline "green"))))
+ '(diff-refine-removed ((t (:background nil :underline "red"))))
+ '(diff-refine-change ((t (:background nil))))
+ '(diff-header-face ((t (:background nil :weight extra-bold))))
+ '(diff-hunk-header-face ((t (:foreground "turquoise" :weight extra-bold :underline t))))
+
+ '(ace-jump-face-foreground ((t (:foreground "yellow" :weight bold))))
+
+ '(anzu-mode-line ((t (:foreground "yellow"))))
+ '(anzu-replace-to ((t (:foreground "yellow" :background "grey10"))))
+
+ '(helm-selection ((t (:inherit highlight))))
+ '(helm-ff-file ((t (:foreground "white" :background nil))))
+ '(helm-ff-directory ((t (:foreground "cyan" :background nil :underline t))))
+ '(helm-grep-lineno ((t (:foreground "IndianRed1"))))
+ '(helm-moccur-buffer ((t (:foreground "aquamarine1" :underline nil))))
+
+ '(helm-gtags-file ((t (:foreground "aquamarine1"))))
+ '(helm-gtags-lineno ((t (:foreground "IndianRed1" :underline nil))))
+
+ '(highlight-symbol-face ((t (:foreground "black" :background "white"))))
+ '(flycheck-info ((t (:style wave :color "green" :underline t))))
+ '(flycheck-error ((t (:foreground "yellow" :weight bold :background "red"))))
+ '(flycheck-warning ((t (:weight bold :underline "darkorange" :foreground nil :background nil))))
+ '(flycheck-error-list-highlight ((t (:background "grey15"))))
+
+ '(org-block ((t (:foreground "green"))))
+ '(org-tag ((t (:foreground "green yellow"))))
+ '(org-checkbox ((t (:foreground "LawnGreen"))))
+ '(org-warning ((t ( :foreground "hotpink"))))
+ '(org-level-1 ((t ( :foreground "hotpink" :weight bold))))
+ '(org-level-2 ((t ( :foreground "yellow" :weight semi-bold))))
+ '(org-level-4 ((t ( :foreground "grey80"))))
+
+ '(guide-key/highlight-command-face ((t (:foreground "green"))))
+ '(guide-key/key-face ((t (:foreground "white"))))
+ '(guide-key/prefix-command-face ((t (:inherit font-lock-keyword-face))))
+   
+ '(gnus-cite-1 ((t ( :foreground "cyan"))))
+ 
+ '(compilation-error ((t ( :underline nil))))
+ '(compilation-line-number ((t ( :underline t))))
+
+ '(mode-line ((t (:background "#333333" :foreground "#cccccd"))))
+ '(mode-line-buffer-id ((t (:foreground "orange" :weight bold))))
+
+ '(magit-branch ((t (:foreground "yellow" :weight bold :underline t))))
+ '(magit-item-highlight ((t (:background "gray3" :weight normal))))
+
+ '(jedi:highlight-function-argument ((t (:foreground "green"))))
+
  '(mouse ((t (nil))))
  '(next-error ((t (:background "blue3"))))
  '(nobreak-space ((t (:foreground "cyan" :underline t))))
@@ -103,7 +155,7 @@
  '(shadow ((t (:foreground "grey70"))))
  '(success ((t (:foreground "Green1" :weight bold))))
  '(tool-bar ((t (:background "grey75" :foreground "black"
-                 :box (:line-width 1 :style released-button)))))
+                             :box (:line-width 1 :style released-button)))))
  '(tooltip ((t (:background "lightyellow" :foreground "black"))))
  '(trailing-whitespace ((t (:background "red1"))))
  '(underline ((t (:underline t))))
