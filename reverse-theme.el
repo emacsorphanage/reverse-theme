@@ -1,6 +1,6 @@
 ;;; reverse-theme.el --- Reverse theme for Emacs
 
-;; Copyright (C) 2012 by Syohei YOSHIDA
+;; Copyright (C) 2014 by Syohei YOSHIDA
 
 ;; Author: Syohei YOSHIDA <syohex@gmail.com>
 ;; URL: https://github.com/syohex/emacs-reverse-theme
@@ -132,9 +132,9 @@
  '(guide-key/highlight-command-face ((t (:foreground "green"))))
  '(guide-key/key-face ((t (:foreground "white"))))
  '(guide-key/prefix-command-face ((t (:inherit font-lock-keyword-face))))
-   
+
  '(gnus-cite-1 ((t ( :foreground "cyan"))))
- 
+
  '(compilation-error ((t ( :underline nil))))
  '(compilation-line-number ((t ( :underline t))))
 
