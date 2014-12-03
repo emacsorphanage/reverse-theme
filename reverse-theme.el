@@ -121,6 +121,7 @@
  '(flycheck-warning ((t (:weight bold :underline "darkorange" :foreground nil :background nil))))
  '(flycheck-error-list-highlight ((t (:background "grey15"))))
 
+ '(org-document-title ((t (:foreground "cyan"))))
  '(org-block ((t (:foreground "green"))))
  '(org-tag ((t (:foreground "green yellow"))))
  '(org-checkbox ((t (:foreground "LawnGreen"))))
@@ -144,6 +145,8 @@
  '(magit-branch ((t (:foreground "yellow" :weight bold :underline t))))
  '(magit-item-highlight ((t (:background "gray3" :weight normal))))
 
+ '(emms-playlist-track-face ((t (:foreground "cyan"))))
+ 
  '(jedi:highlight-function-argument ((t (:foreground "green"))))
 
  '(mouse ((t (nil))))
