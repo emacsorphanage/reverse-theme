@@ -1,5 +1,9 @@
 Revision history for reverse-themes.el
 
+Revision 0.03 2014/12/05 syohex
+    - Add some face settings
+      (Thanks yveszoundi)
+
 Revision 0.02 2014/11/19 syohex
     - Add some face setting
       (Thank you very much yveszoundi)
