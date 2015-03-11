@@ -11,6 +11,6 @@ Color theme like 'emacs -r' or 'emacs --reverse-video'
 ![Reverse Theme](https://github.com/syohex/emacs-reverse-theme/raw/master/image/reverse-theme.png)
 
 [melpa-link]: http://melpa.org/#/reverse-theme
-[melpa-stable-link]: http://melpa.org/#/reverse-theme
+[melpa-stable-link]: http://stable.melpa.org/#/reverse-theme
 [melpa-badge]: http://melpa.org/packages/reverse-theme-badge.svg
 [melpa-stable-badge]: http://stable.melpa.org/packages/reverse-theme-badge.svg
